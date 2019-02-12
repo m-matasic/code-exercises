@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.jumbotron{
+    background: url(../../pics/background.jpg) no-repeat center center;
+    background-size: cover;
+    text-shadow:
+        5px 0 10px black,
+        0 5px 10px black,
+        -5px 0 10px black,
+        0 -5px 10px black;
+    margin-top: 55px;
+}
+nav{
+  font-size: 1.1rem;
+}
+.fa-linkedin{
+    color: rgb(0, 119, 181)
+}
+.fa-code-branch{
+    color: #F54D27;
+}
+.was-made{
+    font-style: italic;
+}
+.card{
+    max-width: 18rem;
+}

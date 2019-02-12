@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #1d2026;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+}
+h2{
+    background: white;
+    font-size: 50px;
+    padding: 20px;
+}
+section{
+    color: white;
+}
+#result{
+    margin: 70px auto;
+    border: 5px solid white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 550px;
+    position: relative;
+}
+h1{
+    font-size: 100px;
+}
+#endNum{
+    font-size: 20px;
+    margin: 20px auto;
+}
+input{
+    margin: 2px auto 0 auto;
+    border: 2px solid red;
+    padding: 10px;
+    font-size: 1rem;
+}
+button{
+    padding: 20px;
+    background: white;
+    font-weight: bold;
+}
+.btnsUp{
+    border: 3px solid #1D72C5;
+}
+.btnsUp:hover{
+    background: #1D72C5;
+    color: white;
+}
+#player1up{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#player2up{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#resetBtn{
+    border: 2px solid red;
+    position: absolute;
+    left: 230px;
+}
+.resetBtns:hover{
+    background: red;
+    color: white;
+}
+.btnsDown{
+    border: 2px solid orange;
+}
+.btnsDown:hover{
+    background: orange;
+}
+#player1down{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#player2down{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+#player1{
+    border: 2px solid white;
+    padding: 2px;
+    position: absolute;
+    top: -40px;
+    left: -50px;
+}
+#player2{
+    border: 2px solid white;
+    padding: 2px;
+    position: absolute;
+    top: -40px;
+    right: -50px;
+}
+#history_section{
+    margin: 50px auto;
+}
+#history{
+    border: 2px solid white;
+    margin: 20px auto;
+    padding: 15px;
+    width: 400px;
+    position: relative;
+}
+#resetHistoryBtn{
+    border: 2px solid red;
+    padding: 3px;
+    font-size: 0.7rem;
+    position: absolute;
+    top: -15px;
+    left: 175px;
+}
+ol{ 
+    display: flex;
+    flex-direction: column-reverse;
+    counter-reset: item;
+}
+li{
+    flex: 0 0 auto;
+    list-style-position: inside;
+    margin: 2px auto 2px 2px;
+    list-style-type: none;
+    counter-increment: item;
+    border-bottom: 1px solid grey;
+}
+li:before{
+    content: "";
+    margin-right: 40px;
+    display: inline-block;
+    color: grey;
+    content: counter(item) ".";
+}
+
+.winner{
+    text-shadow: 
+        0 0 50px #1D72C5, 
+        0 25px 50px #1D72C5, 
+        0 -25px 50px #1D72C5,
+        25px 0 50px #1D72C5, 
+        -25px 0 50px #1D72C5;
+}
