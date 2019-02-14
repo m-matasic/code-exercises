@@ -17,6 +17,8 @@ let p2Score = 0;
 let winNum = 5;
 let gameOver = false;
 
+numInput.value = winNum;
+
 player1up.addEventListener("click", () => addToPlayer1());
 player2up.addEventListener("click", () => addToPlayer2());
 
@@ -24,9 +26,16 @@ player1down.addEventListener("click", () => subFromPlayer1());
 player2down.addEventListener("click", () => subFromPlayer2());
 
 numInput.addEventListener("change", function(){
-    winNum_span.textContent = this.value;
-    winNum = Number(this.value);
-    reset();
+    if(this.value === ''){
+        winNum_span.textContent = 5;
+        winNum = 5;
+        numInput.value = 5;
+        reset();
+    }else{
+        winNum_span.textContent = this.value;
+        winNum = parseInt(this.value);
+        reset();
+    }
 });
 resetBtn.addEventListener("click", () => reset());
 resetHistoryBtn.addEventListener("click", () => resetHistory());

@@ -3,6 +3,8 @@ let p2Score = 0;
 let winNum = 5;
 let gameOver = false;
 
+$("input").val(winNum);
+
 $("#player1up").click( () => addToPlayer1());
 $("#player2up").click( () => addToPlayer2());
 
@@ -10,9 +12,16 @@ $("#player1down").click( () => subFromPlayer1());
 $("#player2down").click( () => subFromPlayer2());
 
 $("input[type='number']").on("change", function(){
-    $("#winNum").text($(this).val());
-    winNum = parseInt($(this).val());
-    reset();
+    if(!$(this).val()){
+        $("#winNum").text(5);
+        winNum = 5;
+        $("input").val(5);
+        reset();
+    }else{
+        $("#winNum").text($(this).val());
+        winNum = parseInt($(this).val());
+        reset();
+    }
 });
 
 $("#resetBtn").click( () => reset());
