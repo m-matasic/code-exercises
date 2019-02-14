@@ -24,6 +24,7 @@ nav{
 .was-made{
     font-style: italic;
 }
-.card{
+.card-deck .card{
     max-width: 18rem;
+    flex-basis: auto;
 }
