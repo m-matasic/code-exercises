@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Quiz</title>
+  </head>
+  <body>
+    <div class="container">
+        <div id="quiz-body">
+            <h1>Quiz Game - Math</h1>
+            <hr>
+            <h4>Question <span id="question-num">1</span> of <span id="question-num-max">1</span></h4>
+            <h5><em class="mr-3">Calculate:</em><span id="question">question</span> = ?</h5>
+            <div id="answers" class="m-5">
+                <button type="button" class="btn btn-outline-light btn-block">answer</button>
+                <button type="button" class="btn btn-outline-light btn-block">answer</button>
+                <button type="button" class="btn btn-outline-light btn-block">answer</button>
+                <button type="button" class="btn btn-outline-light btn-block">answer</button>
+            </div>
+            <div class="container text-center">
+              <button type="button" id="reload" class="btn btn-outline-light d-none">Play again<i class="fas fa-undo ml-2"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
