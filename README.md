@@ -15,6 +15,10 @@ Quiz app is built with JavaScript in version ES5, then in ES6, and then in jQuer
 * built with JavaScript
 * built with jQuery
 
+### Tip Calculator
+
+* built with jQuery
+
 ### Quiz
 
 * built with JavaScript in ES5 (prototypes)
