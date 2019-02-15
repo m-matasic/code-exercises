@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.0/css/bootstrap.min.css" integrity="sha384-PDle/QlgIONtM1aqA2Qemk5gPOE7wFq8+Em+G/hmo5Iq0CCmYZLv3fVRDJ4MMwEA" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+        <div id="tip-body">
+            <h1>Tip Calculator</h1>
+            <hr>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Bill:</span>
+              </div>
+              <input type="number" min="0" id="bill" class="form-control" autocomplete="off" oninput="validity.valid||(value='');">
+              <div class="input-group-append">
+                <span class="input-group-text">$</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Tip:</span>
+              </div>
+              <input type="number" min="0" id="tip" class="form-control" autocomplete="off" oninput="validity.valid||(value='');">
+              <div class="input-group-append">
+                <span class="input-group-text">%</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Tip amount:</span>
+              </div>
+              <input type="number" id="tip-amount" class="form-control" readonly>
+              <div class="input-group-append">
+                <span class="input-group-text">$</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Total:</span>
+              </div>
+              <input type="number" id="total" class="form-control" readonly>
+              <div class="input-group-append">
+                <span class="input-group-text">$</span>
+              </div>
+            </div>
+            <p><em>If you are splitting the bill:</em></p>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Number of people:</span>
+              </div>
+              <input type="number" min="1" id="num-people" class="form-control" autocomplete="off" oninput="validity.valid||(value='');">
+              <div class="input-group-append">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Tip amount per person:</span>
+              </div>
+              <input type="number" id="tip-per-person" class="form-control" readonly>
+              <div class="input-group-append">
+                <span class="input-group-text">$</span>
+              </div>
+            </div>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">Total per person:</span>
+              </div>
+              <input type="number" id="total-per-person" class="form-control" readonly>
+              <div class="input-group-append">
+                <span class="input-group-text">$</span>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/lib/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
+   </body>
+</html>

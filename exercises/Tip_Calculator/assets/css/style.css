@@ -1,0 +1,45 @@
+#tip-body{
+    min-width: 450px;
+    max-width: 600px;
+    color: white;
+    margin: 70px auto;
+    padding: 30px 50px 50px 50px;
+    border-radius: 10px;
+    box-shadow: 
+        10px 0 10px rgba(0, 0, 0, 0.15),
+        0 10px 10px rgba(0, 0, 0, 0.15),
+        -10px 0 10px rgba(0, 0, 0, 0.15),
+        0 -10px 10px rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)),
+    url(../../pics/money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+}
+hr{
+    border: 0; 
+    height: 1px; 
+    background-image: 
+        linear-gradient(to right, 
+            rgba(0, 0, 0, 0), 
+            white, 
+            rgba(0, 0, 0, 0));
+}
+input{
+    text-align: right;
+    outline: none;
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+}
+.form-control[readonly]{
+    background: white;
+    font-weight: bold;
+}
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin-left: 2px;
+} 
