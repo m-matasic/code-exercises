@@ -78,6 +78,7 @@ answerBtn.forEach((btn, index) => {
     btn.addEventListener("click", () => {
         questions[num-1].checkAnswer(index, keepScore);
         nextQuestion();
+        btn.blur();
     });
 });
 

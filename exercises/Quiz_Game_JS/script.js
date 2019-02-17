@@ -77,6 +77,7 @@ answerBtn.forEach(function(btn, index){
     btn.addEventListener("click", function(){
         questions[num-1].checkAnswer(index, keepScore);
         nextQuestion();
+        this.blur();
     });
 });
 

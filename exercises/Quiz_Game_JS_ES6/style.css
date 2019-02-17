@@ -33,3 +33,10 @@ hr{
 h4{
     margin-bottom: 20px;
 }
+@media (hover: none){
+    .btn-outline-light:hover {
+        color: #f8f9fa;
+        background-color: transparent;
+        border-color: #f8f9fa;
+    }
+}

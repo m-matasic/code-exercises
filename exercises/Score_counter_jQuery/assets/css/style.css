@@ -51,10 +51,6 @@ button{
 .btnsUp{
     border: 3px solid #1D72C5;
 }
-.btnsUp:hover{
-    background: #1D72C5;
-    color: white;
-}
 #player1up{
     position: absolute;
     top: 0;
@@ -71,15 +67,21 @@ button{
     left: 50%;
     transform: translateX(-50%);
 }
-.resetBtns:hover{
-    background: red;
-    color: white;
-}
 .btnsDown{
     border: 2px solid orange;
 }
-.btnsDown:hover{
-    background: orange;
+@media (hover: hover){
+    .btnsUp:hover{
+        background: #1D72C5;
+        color: white;
+    }
+    .resetBtns:hover{
+        background: red;
+        color: white;
+    }
+    .btnsDown:hover{
+        background: orange;
+    }
 }
 #player1down{
     position: absolute;

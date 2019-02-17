@@ -71,6 +71,7 @@ $(".ans").each(function(index){
     $(this).click(() => {
         questions[num-1].checkAnswer(index, keepScore);
         nextQuestion();
+        $(".ans").blur();
     });
 });
 
